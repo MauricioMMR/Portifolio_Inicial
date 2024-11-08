@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+.cssbuttons-io-button {
+    background: #2c249b;
+    color: white;
+    font-family: inherit;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.5em;
+    cursor: pointer;
+    width: 140px;
+    margin-top: 8.5px;
+
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+    margin-top: 11px;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+#theme-toggle-button {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 7em;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1280px;
+}
+
+
+#toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+}
+
+
+#toggle:checked+svg #container {
+    fill: #2b4360;
+}
+
+
+#toggle:checked+svg #button {
+    transform: translate(28px, 2.333px);
+}
+
+
+#sun {
+    opacity: 1;
+}
+
+#toggle:checked+svg #sun {
+    opacity: 0;
+}
+
+#moon {
+    opacity: 0;
+}
+
+#toggle:checked+svg #moon {
+    opacity: 1;
+}
+
+
+#cloud {
+    opacity: 1;
+}
+
+#toggle:checked+svg #cloud {
+    opacity: 0;
+}
+
+#stars {
+    opacity: 0;
+}
+
+#toggle:checked+svg #stars {
+    opacity: 1;
+}
+
+.dark {
+    background: linear-gradient(72deg, #180431 50%, #2E0C5A 80%);
+}
+
+header {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 80px;
+    justify-content: center;
+    background-color: #4b42d4;
+}
+
+.nomes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nomes>a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient(90deg, #ADCBF9 44%, #667893 96%);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.dark header {
+    background-color: #ffffff;
+}
+
+.dark .nomes>a {
+    color: #000;
+}
+
+.dark .cssbuttons-io-button {
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: inset 0 0 1.6em -0.6em #0e0a14
+}
+
+.dark .cssbuttons-io-button .icon {
+    box-shadow: inset 0 0 1.6em -0.6em #0e0a14;
+    background-color: #000;
+}
+
+.dark .cssbuttons-io-button .icon svg {
+    color: #7b52b9;
+}
+
+.dark .Projetos {
+    background-color: #3F275E;
+}
+
+.Projetos {
+    height: 133%;
+    width: 60%;
+    position: absolute;
+    background-color: #2737CB;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.botoes button {
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+
+.btn1 {
+    margin-left: 390px;
+    margin-top: 15px;
+    
+}
+
+#prj1>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj2>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj3>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj4>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj5>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj6>img {
+    height: 200px;
+    width: 380px;
+    margin-left: 21px;
+    margin-top: 20px;
+}
+
+#prj1 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.dark #prj1 {
+    background-color: #000;
+    color: #fff;
+}
+
+
+#prj2 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#prj3 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+#prj4 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#prj5 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+#prj6 {
+    height: 400px;
+    width: 420px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.dark #prj2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #prj3 {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #prj4 {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #prj5 {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark #prj6 {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-github {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px;
+    font-weight: 800;
+    place-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+    background-color: black;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.btn-github>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dark .btn-github>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-github:hover {
+    box-shadow:
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+        inset 0 0 0 1px rgba(252, 232, 3, 0.08);
+    color: rgb(88, 67, 184);
+    transform: translate(0, -0.25rem);
+    background-color: black;
+}
+
+.dark .btn-github {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 100px;
+    font-weight: 800;
+    place-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.825rem;
+    line-height: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.conteudo>p {
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.conteudo>h1 {
+    font-size: 16px;
+    margin-left: 22px;
+}
+
+.pt1 {
+    display: flex;
+}
+
+.pt2 {
+    display: flex;
+}
+
+.pt3 {
+    display: flex;
+}
+
+.espaco {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin-top: 1250px;
+}
+
+@media screen and (max-width:1920px) {
+    .nomes>a {
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .cssbuttons-io-button {
+        height: 2.3em;
+    }
+
+    .cssbuttons-io-button .icon {
+        height: 1.8em;
+    }
+
+    .Projetos {
+        height: 163%;
+        width: 60%;
+        position: absolute;
+        background-color: #2737CB;
+        top: 108%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 200px;
+    }
+
+    .conteudo>p {
+        font-size: 12px;
+        margin-left: 31px;
+    }
+
+    .conteudo>h1 {
+        font-size: 16px;
+        margin-left: 31px;
+        margin-top: 5px;
+    }
+
+    #prj1>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj2>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj3>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj4>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj5>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj6>img {
+        height: 150px;
+        width: 300px;
+        margin-left: 31px;
+        margin-top: 30px;
+    }
+
+    #prj1 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    #prj2 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #prj3 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    #prj4 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #prj5 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    #prj6 {
+        height: 350px;
+        width: 370px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .cssbuttons-io-button .icon svg{
+        margin-bottom: 5px;
+    } 
+    .botoes > button{
+        height: 30px;
+    }
+    .btn1{
+        margin-left: 320px;
+    }
+}
+
+
+#teste{
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+
+

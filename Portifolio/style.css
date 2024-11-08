@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  transition: 0.3s;
+}
+
+#theme-toggle-button {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 1570px;
+  margin-top: 40px;
+}
+
+
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+
+#toggle:checked+svg #container {
+  fill: #2b4360;
+}
+
+
+#toggle:checked+svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked+svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked+svg #moon {
+  opacity: 1;
+}
+
+
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked+svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked+svg #stars {
+  opacity: 1;
+}
+
+.dark {
+  background: linear-gradient(72deg, #180431 50%, #2E0C5A 80%);
+}
+
+
+.cssbuttons-io-button {
+  background: #2c249b;
+  color: white;
+  font-family: inherit;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.5em;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+  margin-left: 123px;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+
+.conteudos {
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(78, 78, 236);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 80px;
+}
+
+.cio {
+  color: #2737CB;
+  margin-left: 6px;
+}
+
+.da {
+  color: #2737CB;
+}
+
+.maumau {
+  margin-left: 135px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+}
+
+.links>a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.bemv {
+  color: #ffffff;
+}
+
+.bemv>h3 {
+  padding-top: 220px;
+  margin-left: 140px;
+}
+
+body {
+  background: linear-gradient(72deg, #ADCBF9 50%, #667893 80%);
+}
+
+.dark .conteudos {
+  background-color: #ffffff;
+}
+
+.dark .maumau {
+  color: black;
+}
+
+.dark .bemv {
+  color: #000;
+}
+
+.dark .links>a {
+  color: #000;
+}
+
+.dark .cssbuttons-io-button {
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: inset 0 0 1.6em -0.6em #0e0a14
+}
+
+.dark .cssbuttons-io-button .icon {
+  box-shadow: inset 0 0 1.6em -0.6em #0e0a14;
+  background-color: #000;
+}
+
+.dark .cio {
+  color: #ffffff;
+}
+
+.dark .da {
+  color: #ffffff;
+}
+
+.dark .cssbuttons-io-button .icon svg {
+  color: #7b52b9;
+}
+
+@media screen and (max-width:1920px) {
+  h1 {
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 80px;
+  }
+
+  .bemv>h3 {
+    padding-top: 180px;
+    margin-left: 140px;
+  }
+
+  .maumau {
+    margin-left: 150px;
+    color: #ffffff;
+    padding: 20px;
+  }
+
+  .conteudos {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(78, 78, 236);
+  }
+
+  #theme-toggle-button {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 7em;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1450px;
+  }
+
+  .links>a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    line-height: 28px;
+  }
+
+  .cssbuttons-io-button {
+    height: 2.3em;
+  }
+
+  .cssbuttons-io-button .icon {
+    height: 1.8em;
+  }
+
+}
+
+.Celular {
+  display: none;
+}
+
+.maumaut {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  #theme-toggle-button {
+    margin-left: 80%;
+    rotate: 90deg;
+  }
+
+  .Celular {
+    display: block;
+    display: flex;
+  }
+
+  .conteudos {
+    width: 100%;
+    height: 200px;
+  }
+
+  .bemv {
+    display: none;
+  }
+
+  .maumau {
+    display: none;
+  }
+
+  .maumaut {
+    display: block;
+
+  }
+
+  .maumaut>h1 {
+    font-size: 38px;
+    flex-direction: column;
+    top: 169px;
+    position: absolute;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .conteudos button {
+    display: none;
+  }
+
+  body {
+    background: linear-gradient(90deg, #ADCBF9 5%, #667893 87%);
+  }
+
+  .dark {
+    background: linear-gradient(90deg, #180431 5%, #2E0C5A 87%);
+  }
+
+  .miranda {
+    color: #2737CB;
+  }
+
+  .dark .miranda {
+    color: #fff;
+  }
+  .dev{
+    font-weight: bold;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .dev > span{
+    color: #2737CB;
+  }
+
+  .dark .dev{
+    color: #fff;
+  }
+
+ .dark .dev > span{
+    color: #152cff;
+  }
+
+}
+
